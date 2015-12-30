@@ -64,6 +64,7 @@
 		C7AFCEE01C29293D00D14A85 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrAPIKey.h; path = Flickr/FlickrAPIKey.h; sourceTree = "<group>"; };
 		C7AFCEE11C29293D00D14A85 /* FlickrInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrInformation.h; path = Flickr/FlickrInformation.h; sourceTree = "<group>"; };
 		C7AFCEE21C29293D00D14A85 /* FlickrInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrInformation.m; path = Flickr/FlickrInformation.m; sourceTree = "<group>"; };
+		C7E65E181C2AAF9D00FF1FC1 /* LocationParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocationParser.h; path = Model/LocationParser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +190,7 @@
 				C7AFCED81C28471200D14A85 /* Locations.m */,
 				C7AFCEDA1C29241000D14A85 /* LocationInfo.h */,
 				C7AFCEDB1C29241000D14A85 /* LocationInfo.m */,
+				C7E65E181C2AAF9D00FF1FC1 /* LocationParser.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
