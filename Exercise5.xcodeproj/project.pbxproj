@@ -16,6 +16,7 @@
 		C76A4A811C26CF6E0047232B /* Exercise5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A4A801C26CF6E0047232B /* Exercise5Tests.m */; };
 		C76A4A8C1C26CF6E0047232B /* Exercise5UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A4A8B1C26CF6E0047232B /* Exercise5UITests.m */; };
 		C76A4AB41C2814420047232B /* TopPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A4AB31C2814420047232B /* TopPlacesViewController.m */; };
+		C78E00F91C2AF79400D08679 /* FlickrPhotoInfoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E00F81C2AF79400D08679 /* FlickrPhotoInfoParser.m */; };
 		C7AFCED91C28471200D14A85 /* Locations.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AFCED81C28471200D14A85 /* Locations.m */; };
 		C7AFCEDC1C29241000D14A85 /* LocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AFCEDB1C29241000D14A85 /* LocationInfo.m */; };
 		C7AFCEE31C29293D00D14A85 /* FlickrInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AFCEE21C29293D00D14A85 /* FlickrInformation.m */; };
@@ -60,6 +61,8 @@
 		C76A4AB21C2814420047232B /* TopPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopPlacesViewController.h; path = Controllers/TopPlacesViewController.h; sourceTree = "<group>"; };
 		C76A4AB31C2814420047232B /* TopPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopPlacesViewController.m; path = Controllers/TopPlacesViewController.m; sourceTree = "<group>"; };
 		C78E00F61C2AF73700D08679 /* PhotoInfoParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PhotoInfoParser.h; path = Model/PhotoInfoParser.h; sourceTree = "<group>"; };
+		C78E00F71C2AF79400D08679 /* FlickrPhotoInfoParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrPhotoInfoParser.h; path = Flickr/FlickrPhotoInfoParser.h; sourceTree = "<group>"; };
+		C78E00F81C2AF79400D08679 /* FlickrPhotoInfoParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrPhotoInfoParser.m; path = Flickr/FlickrPhotoInfoParser.m; sourceTree = "<group>"; };
 		C7AFCED71C28471200D14A85 /* Locations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Locations.h; path = Model/Locations.h; sourceTree = "<group>"; };
 		C7AFCED81C28471200D14A85 /* Locations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Locations.m; path = Model/Locations.m; sourceTree = "<group>"; };
 		C7AFCEDA1C29241000D14A85 /* LocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationInfo.h; path = Model/LocationInfo.h; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 				C71C7B5E1C295D5A0023618A /* FlickrFetcher.m */,
 				C7E65E191C2ABCC300FF1FC1 /* FlickrLocationParser.h */,
 				C7E65E1A1C2ABCC300FF1FC1 /* FlickrLocationParser.m */,
+				C78E00F71C2AF79400D08679 /* FlickrPhotoInfoParser.h */,
+				C78E00F81C2AF79400D08679 /* FlickrPhotoInfoParser.m */,
 			);
 			name = "Flickr API";
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76A4AB41C2814420047232B /* TopPlacesViewController.m in Sources */,
+				C78E00F91C2AF79400D08679 /* FlickrPhotoInfoParser.m in Sources */,
 				C7AFCEE31C29293D00D14A85 /* FlickrInformation.m in Sources */,
 				C7E65E1B1C2ABCC300FF1FC1 /* FlickrLocationParser.m in Sources */,
 				C71C7B5F1C295D5A0023618A /* FlickrFetcher.m in Sources */,
