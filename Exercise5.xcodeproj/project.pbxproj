@@ -59,6 +59,7 @@
 		C76A4A8D1C26CF6E0047232B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C76A4AB21C2814420047232B /* TopPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopPlacesViewController.h; path = Controllers/TopPlacesViewController.h; sourceTree = "<group>"; };
 		C76A4AB31C2814420047232B /* TopPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopPlacesViewController.m; path = Controllers/TopPlacesViewController.m; sourceTree = "<group>"; };
+		C78E00F61C2AF73700D08679 /* PhotoInfoParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PhotoInfoParser.h; path = Model/PhotoInfoParser.h; sourceTree = "<group>"; };
 		C7AFCED71C28471200D14A85 /* Locations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Locations.h; path = Model/Locations.h; sourceTree = "<group>"; };
 		C7AFCED81C28471200D14A85 /* Locations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Locations.m; path = Model/Locations.m; sourceTree = "<group>"; };
 		C7AFCEDA1C29241000D14A85 /* LocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationInfo.h; path = Model/LocationInfo.h; sourceTree = "<group>"; };
@@ -201,6 +202,7 @@
 				C7E65E181C2AAF9D00FF1FC1 /* LocationParser.h */,
 				C7E65E151C2A7A0D00FF1FC1 /* PhotoInfo.h */,
 				C7E65E161C2A7A0D00FF1FC1 /* PhotoInfo.m */,
+				C78E00F61C2AF73700D08679 /* PhotoInfoParser.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
