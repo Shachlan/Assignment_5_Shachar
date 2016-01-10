@@ -4,8 +4,10 @@
 #import "TopPlacesViewController.h"
 
 #import "FlickrFetcher.h"
+#import "FlickrInformation.h"
 #import "FlickrLocationParser.h"
 #import "Locations.h"
+#import "PhotosFromPlaceViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -25,11 +27,20 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)viewDidLoad {
   [super viewDidLoad];
   [self fetchPlaces];
+  self.title = @"Top Places";
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(_Nullable id)sender {
-  // TODO:(shachar) implement next VC.
-  NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(nullable id)sender {
+  NSIndexPath *index = [self.tableView indexPathForCell:sender];
+  if (!index ||
+      ![segue.destinationViewController isKindOfClass:[PhotosFromPlaceViewController class]]) {
+    return;
+  }
+  
+  PhotosFromPlaceViewController *destination = segue.destinationViewController;
+  destination.placeId = [self.locations placeIdWithIndex:index.item countryIndex:index.section];
+  destination.title = [self.locations nameOfLocationWithIndex:index.item
+                                                 countryIndex:index.section];
 }
 
 #pragma mark -
@@ -87,9 +98,9 @@ NS_ASSUME_NONNULL_BEGIN
                                  parsedWithParser:(id<LocationParser>)parser {
   NSMutableArray<LocationInfo *> *locations = [[NSMutableArray alloc] init];
   
-  for(NSDictionary *unparsedLocation in unparsedLocations) {
+  for (NSDictionary *unparsedLocation in unparsedLocations) {
     LocationInfo *location = [parser locationInfoFromDictionary:unparsedLocation];
-    if(location) {
+    if (location) {
       [locations addObject:location];
     }
   }

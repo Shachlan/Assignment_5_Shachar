@@ -10,19 +10,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init NS_UNAVAILABLE;
 
-/// Initializes with the given \c locationName, \c regionName, and \c countryName.
-- (instancetype)initWithLocationName:(NSString *)locationName
-                          regionName:(NSString *)regionName
-                      andCountryName:(NSString *)countryName NS_DESIGNATED_INITIALIZER;
+/// Initializes with the given \c locationName, \c regionName, \c countryName and \c placeId.
+- (instancetype)initWithLocationName:(NSString *)locationName regionName:(NSString *)regionName
+                         countryName:(NSString *)countryName
+                          placeId:(NSString *)placeId NS_DESIGNATED_INITIALIZER;
 
 /// Name of location.
-@property (strong, readonly, nonatomic) NSString *locationName;
+@property (readonly, nonatomic) NSString *locationName;
 
 /// Name of the region the location is in.
-@property (strong, readonly, nonatomic) NSString *regionName;
+@property (readonly, nonatomic) NSString *regionName;
 
 /// Name of the country the location is in.
-@property (strong, readonly, nonatomic) NSString *countryName;
+@property (readonly, nonatomic) NSString *countryName;
+
+/// Id identifying the photo in the relevant web API.
+@property (readonly, nonatomic) NSString *placeId;
 
 @end
 

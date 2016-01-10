@@ -22,13 +22,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// Returns the name of the country with the given \c index.
 - (NSString *)nameOfCountryWithIndex:(NSUInteger)countryIndex;
 
-/// Returns the name of location for the country/location index.
+/// Returns the name of location for the given country/location index.
 - (NSString *)nameOfLocationWithIndex:(NSUInteger)locationIndex
                          countryIndex:(NSUInteger)countryIndex;
 
-/// Returns the name of region for the country/location index.
+/// Returns the name of region for the given country/location index.
 - (NSString *)nameOfRegionWithIndex:(NSUInteger)locationIndex
                        countryIndex:(NSUInteger)countryIndex;
+
+/// Returns the Id of the photo for the given country/location index.
+- (NSString *)placeIdWithIndex:(NSUInteger)locationIndex countryIndex:(NSUInteger)countryIndex;
 
 /// Number of different countries of all locations represented by this object.
 @property (readonly, nonatomic)NSUInteger numberOfCountries;
