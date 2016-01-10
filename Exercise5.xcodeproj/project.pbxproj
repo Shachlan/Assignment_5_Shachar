@@ -20,6 +20,16 @@
 		C7AFCED91C28471200D14A85 /* Locations.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AFCED81C28471200D14A85 /* Locations.m */; };
 		C7AFCEDC1C29241000D14A85 /* LocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AFCEDB1C29241000D14A85 /* LocationInfo.m */; };
 		C7AFCEE31C29293D00D14A85 /* FlickrInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AFCEE21C29293D00D14A85 /* FlickrInformation.m */; };
+		C7C78B1F1C3D605D003CD162 /* EXTADT.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B081C3D605D003CD162 /* EXTADT.m */; };
+		C7C78B201C3D605D003CD162 /* EXTConcreteProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B0A1C3D605D003CD162 /* EXTConcreteProtocol.m */; };
+		C7C78B211C3D605D003CD162 /* EXTNil.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B0E1C3D605D003CD162 /* EXTNil.m */; };
+		C7C78B221C3D605D003CD162 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B121C3D605D003CD162 /* EXTRuntimeExtensions.m */; };
+		C7C78B231C3D605D003CD162 /* EXTSafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B141C3D605D003CD162 /* EXTSafeCategory.m */; };
+		C7C78B241C3D605D003CD162 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B161C3D605D003CD162 /* EXTScope.m */; };
+		C7C78B251C3D605D003CD162 /* EXTSelectorChecking.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B181C3D605D003CD162 /* EXTSelectorChecking.m */; };
+		C7C78B261C3D605D003CD162 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B1C1C3D605D003CD162 /* NSInvocation+EXT.m */; };
+		C7C78B271C3D605D003CD162 /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B1E1C3D605D003CD162 /* NSMethodSignature+EXT.m */; };
+		C7E65E141C2997DD00FF1FC1 /* PhotosFromPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E131C2997DD00FF1FC1 /* PhotosFromPlaceViewController.m */; };
 		C7E65E171C2A7A0D00FF1FC1 /* PhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E161C2A7A0D00FF1FC1 /* PhotoInfo.m */; };
 		C7E65E1B1C2ABCC300FF1FC1 /* FlickrLocationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E1A1C2ABCC300FF1FC1 /* FlickrLocationParser.m */; };
 /* End PBXBuildFile section */
@@ -70,7 +80,33 @@
 		C7AFCEE01C29293D00D14A85 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrAPIKey.h; path = Flickr/FlickrAPIKey.h; sourceTree = "<group>"; };
 		C7AFCEE11C29293D00D14A85 /* FlickrInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrInformation.h; path = Flickr/FlickrInformation.h; sourceTree = "<group>"; };
 		C7AFCEE21C29293D00D14A85 /* FlickrInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrInformation.m; path = Flickr/FlickrInformation.m; sourceTree = "<group>"; };
+		C7C78B071C3D605D003CD162 /* EXTADT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTADT.h; path = "../../../Downloads/libextobjc-master/extobjc/EXTADT.h"; sourceTree = "<group>"; };
+		C7C78B081C3D605D003CD162 /* EXTADT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EXTADT.m; path = "../../../Downloads/libextobjc-master/extobjc/EXTADT.m"; sourceTree = "<group>"; };
+		C7C78B091C3D605D003CD162 /* EXTConcreteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTConcreteProtocol.h; path = "../../../Downloads/libextobjc-master/extobjc/EXTConcreteProtocol.h"; sourceTree = "<group>"; };
+		C7C78B0A1C3D605D003CD162 /* EXTConcreteProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EXTConcreteProtocol.m; path = "../../../Downloads/libextobjc-master/extobjc/EXTConcreteProtocol.m"; sourceTree = "<group>"; };
+		C7C78B0B1C3D605D003CD162 /* EXTCoroutine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTCoroutine.h; path = "../../../Downloads/libextobjc-master/extobjc/EXTCoroutine.h"; sourceTree = "<group>"; };
+		C7C78B0C1C3D605D003CD162 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = "../../../Downloads/libextobjc-master/extobjc/EXTKeyPathCoding.h"; sourceTree = "<group>"; };
+		C7C78B0D1C3D605D003CD162 /* EXTNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTNil.h; path = "../../../Downloads/libextobjc-master/extobjc/EXTNil.h"; sourceTree = "<group>"; };
+		C7C78B0E1C3D605D003CD162 /* EXTNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EXTNil.m; path = "../../../Downloads/libextobjc-master/extobjc/EXTNil.m"; sourceTree = "<group>"; };
+		C7C78B0F1C3D605D003CD162 /* extobjc_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = extobjc_Prefix.pch; path = "../../../Downloads/libextobjc-master/extobjc/extobjc_Prefix.pch"; sourceTree = "<group>"; };
+		C7C78B101C3D605D003CD162 /* extobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = extobjc.h; path = "../../../Downloads/libextobjc-master/extobjc/extobjc.h"; sourceTree = "<group>"; };
+		C7C78B111C3D605D003CD162 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTRuntimeExtensions.h; path = "../../../Downloads/libextobjc-master/extobjc/EXTRuntimeExtensions.h"; sourceTree = "<group>"; };
+		C7C78B121C3D605D003CD162 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EXTRuntimeExtensions.m; path = "../../../Downloads/libextobjc-master/extobjc/EXTRuntimeExtensions.m"; sourceTree = "<group>"; };
+		C7C78B131C3D605D003CD162 /* EXTSafeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTSafeCategory.h; path = "../../../Downloads/libextobjc-master/extobjc/EXTSafeCategory.h"; sourceTree = "<group>"; };
+		C7C78B141C3D605D003CD162 /* EXTSafeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EXTSafeCategory.m; path = "../../../Downloads/libextobjc-master/extobjc/EXTSafeCategory.m"; sourceTree = "<group>"; };
+		C7C78B151C3D605D003CD162 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = "../../../Downloads/libextobjc-master/extobjc/EXTScope.h"; sourceTree = "<group>"; };
+		C7C78B161C3D605D003CD162 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EXTScope.m; path = "../../../Downloads/libextobjc-master/extobjc/EXTScope.m"; sourceTree = "<group>"; };
+		C7C78B171C3D605D003CD162 /* EXTSelectorChecking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTSelectorChecking.h; path = "../../../Downloads/libextobjc-master/extobjc/EXTSelectorChecking.h"; sourceTree = "<group>"; };
+		C7C78B181C3D605D003CD162 /* EXTSelectorChecking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EXTSelectorChecking.m; path = "../../../Downloads/libextobjc-master/extobjc/EXTSelectorChecking.m"; sourceTree = "<group>"; };
+		C7C78B191C3D605D003CD162 /* EXTSynthesize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTSynthesize.h; path = "../../../Downloads/libextobjc-master/extobjc/EXTSynthesize.h"; sourceTree = "<group>"; };
+		C7C78B1A1C3D605D003CD162 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = "../../../Downloads/libextobjc-master/extobjc/metamacros.h"; sourceTree = "<group>"; };
+		C7C78B1B1C3D605D003CD162 /* NSInvocation+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+EXT.h"; path = "../../../Downloads/libextobjc-master/extobjc/NSInvocation+EXT.h"; sourceTree = "<group>"; };
+		C7C78B1C1C3D605D003CD162 /* NSInvocation+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+EXT.m"; path = "../../../Downloads/libextobjc-master/extobjc/NSInvocation+EXT.m"; sourceTree = "<group>"; };
+		C7C78B1D1C3D605D003CD162 /* NSMethodSignature+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+EXT.h"; path = "../../../Downloads/libextobjc-master/extobjc/NSMethodSignature+EXT.h"; sourceTree = "<group>"; };
+		C7C78B1E1C3D605D003CD162 /* NSMethodSignature+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+EXT.m"; path = "../../../Downloads/libextobjc-master/extobjc/NSMethodSignature+EXT.m"; sourceTree = "<group>"; };
 		C7E65E0F1C29958D00FF1FC1 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = Controllers/ImageViewController.h; sourceTree = "<group>"; };
+		C7E65E121C2997DD00FF1FC1 /* PhotosFromPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotosFromPlaceViewController.h; path = Controllers/PhotosFromPlaceViewController.h; sourceTree = "<group>"; };
+		C7E65E131C2997DD00FF1FC1 /* PhotosFromPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotosFromPlaceViewController.m; path = Controllers/PhotosFromPlaceViewController.m; sourceTree = "<group>"; };
 		C7E65E151C2A7A0D00FF1FC1 /* PhotoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoInfo.h; path = Model/PhotoInfo.h; sourceTree = "<group>"; };
 		C7E65E161C2A7A0D00FF1FC1 /* PhotoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoInfo.m; path = Model/PhotoInfo.m; sourceTree = "<group>"; };
 		C7E65E181C2AAF9D00FF1FC1 /* LocationParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocationParser.h; path = Model/LocationParser.h; sourceTree = "<group>"; };
@@ -126,6 +162,7 @@
 		C76A4A621C26CF6E0047232B /* Exercise5 */ = {
 			isa = PBXGroup;
 			children = (
+				C7C78B281C3D6068003CD162 /* LibEXT */,
 				C76A4AB51C2814460047232B /* Controllers */,
 				C76A4AB11C2814110047232B /* Model */,
 				C76A4AA61C27F76B0047232B /* Views */,
@@ -219,8 +256,41 @@
 				C7E65E0F1C29958D00FF1FC1 /* ImageViewController.h */,
 				C76A4AB21C2814420047232B /* TopPlacesViewController.h */,
 				C76A4AB31C2814420047232B /* TopPlacesViewController.m */,
+				C7E65E121C2997DD00FF1FC1 /* PhotosFromPlaceViewController.h */,
+				C7E65E131C2997DD00FF1FC1 /* PhotosFromPlaceViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C7C78B281C3D6068003CD162 /* LibEXT */ = {
+			isa = PBXGroup;
+			children = (
+				C7C78B1B1C3D605D003CD162 /* NSInvocation+EXT.h */,
+				C7C78B1C1C3D605D003CD162 /* NSInvocation+EXT.m */,
+				C7C78B1D1C3D605D003CD162 /* NSMethodSignature+EXT.h */,
+				C7C78B1E1C3D605D003CD162 /* NSMethodSignature+EXT.m */,
+				C7C78B071C3D605D003CD162 /* EXTADT.h */,
+				C7C78B081C3D605D003CD162 /* EXTADT.m */,
+				C7C78B091C3D605D003CD162 /* EXTConcreteProtocol.h */,
+				C7C78B0A1C3D605D003CD162 /* EXTConcreteProtocol.m */,
+				C7C78B0B1C3D605D003CD162 /* EXTCoroutine.h */,
+				C7C78B0C1C3D605D003CD162 /* EXTKeyPathCoding.h */,
+				C7C78B0D1C3D605D003CD162 /* EXTNil.h */,
+				C7C78B0E1C3D605D003CD162 /* EXTNil.m */,
+				C7C78B0F1C3D605D003CD162 /* extobjc_Prefix.pch */,
+				C7C78B101C3D605D003CD162 /* extobjc.h */,
+				C7C78B111C3D605D003CD162 /* EXTRuntimeExtensions.h */,
+				C7C78B121C3D605D003CD162 /* EXTRuntimeExtensions.m */,
+				C7C78B131C3D605D003CD162 /* EXTSafeCategory.h */,
+				C7C78B141C3D605D003CD162 /* EXTSafeCategory.m */,
+				C7C78B151C3D605D003CD162 /* EXTScope.h */,
+				C7C78B161C3D605D003CD162 /* EXTScope.m */,
+				C7C78B171C3D605D003CD162 /* EXTSelectorChecking.h */,
+				C7C78B181C3D605D003CD162 /* EXTSelectorChecking.m */,
+				C7C78B191C3D605D003CD162 /* EXTSynthesize.h */,
+				C7C78B1A1C3D605D003CD162 /* metamacros.h */,
+			);
+			name = LibEXT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,15 +423,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C78B241C3D605D003CD162 /* EXTScope.m in Sources */,
 				C76A4AB41C2814420047232B /* TopPlacesViewController.m in Sources */,
 				C78E00F91C2AF79400D08679 /* FlickrPhotoInfoParser.m in Sources */,
 				C7AFCEE31C29293D00D14A85 /* FlickrInformation.m in Sources */,
 				C7E65E1B1C2ABCC300FF1FC1 /* FlickrLocationParser.m in Sources */,
+				C7C78B251C3D605D003CD162 /* EXTSelectorChecking.m in Sources */,
+				C7C78B201C3D605D003CD162 /* EXTConcreteProtocol.m in Sources */,
+				C7C78B231C3D605D003CD162 /* EXTSafeCategory.m in Sources */,
+				C7C78B221C3D605D003CD162 /* EXTRuntimeExtensions.m in Sources */,
 				C71C7B5F1C295D5A0023618A /* FlickrFetcher.m in Sources */,
+				C7C78B261C3D605D003CD162 /* NSInvocation+EXT.m in Sources */,
+				C7C78B271C3D605D003CD162 /* NSMethodSignature+EXT.m in Sources */,
+				C7C78B211C3D605D003CD162 /* EXTNil.m in Sources */,
+				C764648D1C31757B00EFA7CC /* ImageFetcher.m in Sources */,
+				C7C78B1F1C3D605D003CD162 /* EXTADT.m in Sources */,
 				C76A4A681C26CF6E0047232B /* AppDelegate.m in Sources */,
 				C76A4A651C26CF6E0047232B /* main.m in Sources */,
 				C7E65E171C2A7A0D00FF1FC1 /* PhotoInfo.m in Sources */,
 				C7AFCED91C28471200D14A85 /* Locations.m in Sources */,
+				C7E65E141C2997DD00FF1FC1 /* PhotosFromPlaceViewController.m in Sources */,
 				C7AFCEDC1C29241000D14A85 /* LocationInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
