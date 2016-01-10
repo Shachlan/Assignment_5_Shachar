@@ -19,6 +19,7 @@
 		C7AFCED91C28471200D14A85 /* Locations.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AFCED81C28471200D14A85 /* Locations.m */; };
 		C7AFCEDC1C29241000D14A85 /* LocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AFCEDB1C29241000D14A85 /* LocationInfo.m */; };
 		C7AFCEE31C29293D00D14A85 /* FlickrInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AFCEE21C29293D00D14A85 /* FlickrInformation.m */; };
+		C7E65E171C2A7A0D00FF1FC1 /* PhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E161C2A7A0D00FF1FC1 /* PhotoInfo.m */; };
 		C7E65E1B1C2ABCC300FF1FC1 /* FlickrLocationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E1A1C2ABCC300FF1FC1 /* FlickrLocationParser.m */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,8 @@
 		C7AFCEE01C29293D00D14A85 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrAPIKey.h; path = Flickr/FlickrAPIKey.h; sourceTree = "<group>"; };
 		C7AFCEE11C29293D00D14A85 /* FlickrInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrInformation.h; path = Flickr/FlickrInformation.h; sourceTree = "<group>"; };
 		C7AFCEE21C29293D00D14A85 /* FlickrInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrInformation.m; path = Flickr/FlickrInformation.m; sourceTree = "<group>"; };
+		C7E65E151C2A7A0D00FF1FC1 /* PhotoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoInfo.h; path = Model/PhotoInfo.h; sourceTree = "<group>"; };
+		C7E65E161C2A7A0D00FF1FC1 /* PhotoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoInfo.m; path = Model/PhotoInfo.m; sourceTree = "<group>"; };
 		C7E65E181C2AAF9D00FF1FC1 /* LocationParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocationParser.h; path = Model/LocationParser.h; sourceTree = "<group>"; };
 		C7E65E191C2ABCC300FF1FC1 /* FlickrLocationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrLocationParser.h; path = Flickr/FlickrLocationParser.h; sourceTree = "<group>"; };
 		C7E65E1A1C2ABCC300FF1FC1 /* FlickrLocationParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrLocationParser.m; path = Flickr/FlickrLocationParser.m; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				C7AFCEDA1C29241000D14A85 /* LocationInfo.h */,
 				C7AFCEDB1C29241000D14A85 /* LocationInfo.m */,
 				C7E65E181C2AAF9D00FF1FC1 /* LocationParser.h */,
+				C7E65E151C2A7A0D00FF1FC1 /* PhotoInfo.h */,
+				C7E65E161C2A7A0D00FF1FC1 /* PhotoInfo.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 				C71C7B5F1C295D5A0023618A /* FlickrFetcher.m in Sources */,
 				C76A4A681C26CF6E0047232B /* AppDelegate.m in Sources */,
 				C76A4A651C26CF6E0047232B /* main.m in Sources */,
+				C7E65E171C2A7A0D00FF1FC1 /* PhotoInfo.m in Sources */,
 				C7AFCED91C28471200D14A85 /* Locations.m in Sources */,
 				C7AFCEDC1C29241000D14A85 /* LocationInfo.m in Sources */,
 			);
