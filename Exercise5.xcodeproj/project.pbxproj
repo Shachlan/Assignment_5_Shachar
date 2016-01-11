@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C71C7B5F1C295D5A0023618A /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C71C7B5E1C295D5A0023618A /* FlickrFetcher.m */; };
+		C764648D1C31757B00EFA7CC /* ImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C764648C1C31757B00EFA7CC /* ImageFetcher.m */; };
 		C76A4A651C26CF6E0047232B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A4A641C26CF6E0047232B /* main.m */; };
 		C76A4A681C26CF6E0047232B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A4A671C26CF6E0047232B /* AppDelegate.m */; };
 		C76A4A711C26CF6E0047232B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76A4A6F1C26CF6E0047232B /* Main.storyboard */; };
@@ -54,6 +55,8 @@
 /* Begin PBXFileReference section */
 		C71C7B5D1C295D5A0023618A /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrFetcher.h; path = Flickr/FlickrFetcher.h; sourceTree = "<group>"; };
 		C71C7B5E1C295D5A0023618A /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrFetcher.m; path = Flickr/FlickrFetcher.m; sourceTree = "<group>"; };
+		C764648B1C31757B00EFA7CC /* ImageFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageFetcher.h; path = View/ImageFetcher.h; sourceTree = "<group>"; };
+		C764648C1C31757B00EFA7CC /* ImageFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageFetcher.m; path = View/ImageFetcher.m; sourceTree = "<group>"; };
 		C76A4A601C26CF6E0047232B /* Exercise5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76A4A641C26CF6E0047232B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C76A4A661C26CF6E0047232B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -231,6 +234,8 @@
 		C76A4AA61C27F76B0047232B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C764648B1C31757B00EFA7CC /* ImageFetcher.h */,
+				C764648C1C31757B00EFA7CC /* ImageFetcher.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
