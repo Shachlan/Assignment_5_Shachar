@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C71C7B5F1C295D5A0023618A /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C71C7B5E1C295D5A0023618A /* FlickrFetcher.m */; };
+		C764648D1C31757B00EFA7CC /* ImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C764648C1C31757B00EFA7CC /* ImageFetcher.m */; };
 		C76A4A651C26CF6E0047232B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A4A641C26CF6E0047232B /* main.m */; };
 		C76A4A681C26CF6E0047232B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A4A671C26CF6E0047232B /* AppDelegate.m */; };
 		C76A4A711C26CF6E0047232B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76A4A6F1C26CF6E0047232B /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		C7C78B251C3D605D003CD162 /* EXTSelectorChecking.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B181C3D605D003CD162 /* EXTSelectorChecking.m */; };
 		C7C78B261C3D605D003CD162 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B1C1C3D605D003CD162 /* NSInvocation+EXT.m */; };
 		C7C78B271C3D605D003CD162 /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B1E1C3D605D003CD162 /* NSMethodSignature+EXT.m */; };
+		C7E65E111C29958D00FF1FC1 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E101C29958D00FF1FC1 /* ImageViewController.m */; };
 		C7E65E141C2997DD00FF1FC1 /* PhotosFromPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E131C2997DD00FF1FC1 /* PhotosFromPlaceViewController.m */; };
 		C7E65E171C2A7A0D00FF1FC1 /* PhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E161C2A7A0D00FF1FC1 /* PhotoInfo.m */; };
 		C7E65E1B1C2ABCC300FF1FC1 /* FlickrLocationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E1A1C2ABCC300FF1FC1 /* FlickrLocationParser.m */; };
@@ -54,6 +56,8 @@
 /* Begin PBXFileReference section */
 		C71C7B5D1C295D5A0023618A /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrFetcher.h; path = Flickr/FlickrFetcher.h; sourceTree = "<group>"; };
 		C71C7B5E1C295D5A0023618A /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrFetcher.m; path = Flickr/FlickrFetcher.m; sourceTree = "<group>"; };
+		C764648B1C31757B00EFA7CC /* ImageFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageFetcher.h; path = View/ImageFetcher.h; sourceTree = "<group>"; };
+		C764648C1C31757B00EFA7CC /* ImageFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageFetcher.m; path = View/ImageFetcher.m; sourceTree = "<group>"; };
 		C76A4A601C26CF6E0047232B /* Exercise5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76A4A641C26CF6E0047232B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C76A4A661C26CF6E0047232B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		C7C78B1D1C3D605D003CD162 /* NSMethodSignature+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+EXT.h"; path = "../../../Downloads/libextobjc-master/extobjc/NSMethodSignature+EXT.h"; sourceTree = "<group>"; };
 		C7C78B1E1C3D605D003CD162 /* NSMethodSignature+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+EXT.m"; path = "../../../Downloads/libextobjc-master/extobjc/NSMethodSignature+EXT.m"; sourceTree = "<group>"; };
 		C7E65E0F1C29958D00FF1FC1 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = Controllers/ImageViewController.h; sourceTree = "<group>"; };
+		C7E65E101C29958D00FF1FC1 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = Controllers/ImageViewController.m; sourceTree = "<group>"; };
 		C7E65E121C2997DD00FF1FC1 /* PhotosFromPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotosFromPlaceViewController.h; path = Controllers/PhotosFromPlaceViewController.h; sourceTree = "<group>"; };
 		C7E65E131C2997DD00FF1FC1 /* PhotosFromPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotosFromPlaceViewController.m; path = Controllers/PhotosFromPlaceViewController.m; sourceTree = "<group>"; };
 		C7E65E151C2A7A0D00FF1FC1 /* PhotoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoInfo.h; path = Model/PhotoInfo.h; sourceTree = "<group>"; };
@@ -231,6 +236,8 @@
 		C76A4AA61C27F76B0047232B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C764648B1C31757B00EFA7CC /* ImageFetcher.h */,
+				C764648C1C31757B00EFA7CC /* ImageFetcher.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -254,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				C7E65E0F1C29958D00FF1FC1 /* ImageViewController.h */,
+				C7E65E101C29958D00FF1FC1 /* ImageViewController.m */,
 				C76A4AB21C2814420047232B /* TopPlacesViewController.h */,
 				C76A4AB31C2814420047232B /* TopPlacesViewController.m */,
 				C7E65E121C2997DD00FF1FC1 /* PhotosFromPlaceViewController.h */,
@@ -428,6 +436,7 @@
 				C78E00F91C2AF79400D08679 /* FlickrPhotoInfoParser.m in Sources */,
 				C7AFCEE31C29293D00D14A85 /* FlickrInformation.m in Sources */,
 				C7E65E1B1C2ABCC300FF1FC1 /* FlickrLocationParser.m in Sources */,
+				C7E65E111C29958D00FF1FC1 /* ImageViewController.m in Sources */,
 				C7C78B251C3D605D003CD162 /* EXTSelectorChecking.m in Sources */,
 				C7C78B201C3D605D003CD162 /* EXTConcreteProtocol.m in Sources */,
 				C7C78B231C3D605D003CD162 /* EXTSafeCategory.m in Sources */,
