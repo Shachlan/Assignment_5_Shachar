@@ -15,6 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)downloadTopPlaceInformationWithCompletion:(void (^)(NSArray *))completion
                                          andError:(void (^)(NSError *))error;
 
+/// Asynchronously downloads the photo information for photos from given \c placeId (a string
+/// uniquely identifying the place in Flickr) where number of photos is determined by \c maxResults.
+/// Upon completion the given \c completion block is called with the photo data. Upon error, the
+/// given \c error block is executed.
++ (void)downloadPhotosFromPlace:(NSString *)placeId
+                     maxResults:(NSUInteger)maxResults
+                 withCompletion:(void (^)(NSArray *))completion
+                       andError:(void (^)(NSError *))error;
+
 @end
 
 NS_ASSUME_NONNULL_END

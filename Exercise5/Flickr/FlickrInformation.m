@@ -23,9 +23,9 @@
   return [self URLForQuery:@"https://api.flickr.com/services/rest/?method=flickr.places.getTopPlacesList&place_type_id=7"];
 }
 
-+ (NSURL *)URLforPhotosInPlace:(id)flickrPlaceId maxResults:(int)maxResults;
++ (NSURL *)URLforPhotosInPlace:(id)flickrPlaceId maxResults:(NSUInteger)maxResults;
 {
-  return [self URLForQuery:[NSString stringWithFormat:@"https://api.flickr.com/services/rest/?method=flickr.photos.search&place_id=%@&per_page=%d&extras=original_format,tags,description,geo,date_upload,owner_name,place_url", flickrPlaceId, maxResults]];
+  return [self URLForQuery:[NSString stringWithFormat:@"https://api.flickr.com/services/rest/?method=flickr.photos.search&place_id=%@&per_page=%ld&extras=original_format,tags,description,geo,date_upload,owner_name,place_url", flickrPlaceId, maxResults]];
 }
 
 + (NSURL *)URLforRecentGeoreferencedPhotos;
@@ -53,7 +53,7 @@
     case FlickrPhotoFormatOriginal:  formatString = @"o"; break;
   }
   
-  return [NSString stringWithFormat:@"http://farm%@.static.flickr.com/%@/%@_%@_%@.%@",
+  return [NSString stringWithFormat:@"https://farm%@.static.flickr.com/%@/%@_%@_%@.%@",
           farm, server, photo_id, secret, formatString, fileType];
 }
 

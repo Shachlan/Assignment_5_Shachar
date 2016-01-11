@@ -32,7 +32,7 @@ MutableLocationArraysInMutableMap;
 #pragma mark -
 
 - (instancetype)initWithLocations:(NSArray<LocationInfo *> *)locations{
-  if(self = [super init]) {
+  if (self = [super init]) {
     LocationInfoByCountryNames *locationsInfoByCountry = [self mappingForLocationInfo:locations];
     self.locationsInfoByCountryName =
         [self mappingWithAlphabeticallySortedLocations:locationsInfoByCountry];
@@ -58,6 +58,10 @@ MutableLocationArraysInMutableMap;
   return [self locationAtIndex:locationIndex inCountry:countryIndex].regionName;
 }
 
+- (NSString *)placeIdWithIndex:(NSUInteger)locationIndex countryIndex:(NSUInteger)countryIndex {
+  return [self locationAtIndex:locationIndex inCountry:countryIndex].placeId;
+}
+
 - (NSString *)nameOfCountryWithIndex:(NSUInteger)countryIndex {
   return self.sortedCountryNames[countryIndex];
 }
@@ -80,10 +84,10 @@ MutableLocationArraysInMutableMap;
 - (LocationInfoByCountryNames *)mappingForLocationInfo:(NSArray<LocationInfo *> *)locations {
   MutableLocationArraysInMutableMap *mutableMapping = [[NSMutableDictionary alloc] init];
   
-  for(LocationInfo *locationInfo in locations) {
+  for (LocationInfo *locationInfo in locations) {
     NSMutableArray *mutableLocations = mutableMapping[locationInfo.countryName];
     
-    if(!mutableLocations) {
+    if (!mutableLocations) {
       mutableLocations = [[NSMutableArray alloc] init];
       [mutableMapping setObject:mutableLocations forKey:locationInfo.countryName];
     }
@@ -100,7 +104,7 @@ MutableLocationArraysInMutableMap;
   
   NSComparator comparator = [self locationInfoComparer];
   
-  for(NSString *countryName in [locationsInfoByCountry allKeys]) {
+  for (NSString *countryName in [locationsInfoByCountry allKeys]) {
     NSArray *locationsInfo = locationsInfoByCountry[countryName];
     mutableMapping[countryName] = [locationsInfo sortedArrayUsingComparator: comparator];
   }
@@ -113,7 +117,7 @@ MutableLocationArraysInMutableMap;
     NSComparisonResult regionComparison =
         [first.regionName localizedCaseInsensitiveCompare:second.regionName];
     
-    if(regionComparison != NSOrderedSame) {
+    if (regionComparison != NSOrderedSame) {
       return regionComparison;
     }
     

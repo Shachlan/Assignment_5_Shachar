@@ -11,16 +11,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (LocationInfo *)locationInfoFromDictionary:(NSDictionary *)unParsedLocation {
   NSArray <NSString *> *parsedContent = [self parsedPlaceContentFromDictionary:unParsedLocation];
-  NSString * locationName = [self locationNameFromParsedPlaceContent:parsedContent];
-  NSString * regionName = [self regionNameFromParsedPlaceContent:parsedContent];
-  NSString * countryName = [self countryNameFromParsedPlaceContent:parsedContent];
+  NSString *locationName = [self locationNameFromParsedPlaceContent:parsedContent];
+  NSString *regionName = [self regionNameFromParsedPlaceContent:parsedContent];
+  NSString *countryName = [self countryNameFromParsedPlaceContent:parsedContent];
+  NSString *placeId = unParsedLocation[FLICKR_PLACE_ID];
   
-  if(![locationName length] || ![countryName length] || ![regionName length]) {
+  if (![locationName length] || ![countryName length] || ![regionName length] || ![placeId length]) {
     return nil;
   }
   
   return [[LocationInfo alloc] initWithLocationName:locationName regionName:regionName
-                                     andCountryName:countryName];
+                                        countryName:countryName placeId:placeId];
 }
 
 - (NSArray <NSString *> *)parsedPlaceContentFromDictionary:(NSDictionary *)placeInfo {
