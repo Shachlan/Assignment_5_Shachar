@@ -30,6 +30,7 @@
 		C7C78B251C3D605D003CD162 /* EXTSelectorChecking.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B181C3D605D003CD162 /* EXTSelectorChecking.m */; };
 		C7C78B261C3D605D003CD162 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B1C1C3D605D003CD162 /* NSInvocation+EXT.m */; };
 		C7C78B271C3D605D003CD162 /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C78B1E1C3D605D003CD162 /* NSMethodSignature+EXT.m */; };
+		C7E65E0E1C29796800FF1FC1 /* PhotoInfoStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E0D1C29796800FF1FC1 /* PhotoInfoStorage.m */; };
 		C7E65E111C29958D00FF1FC1 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E101C29958D00FF1FC1 /* ImageViewController.m */; };
 		C7E65E141C2997DD00FF1FC1 /* PhotosFromPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E131C2997DD00FF1FC1 /* PhotosFromPlaceViewController.m */; };
 		C7E65E171C2A7A0D00FF1FC1 /* PhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E65E161C2A7A0D00FF1FC1 /* PhotoInfo.m */; };
@@ -108,6 +109,8 @@
 		C7C78B1C1C3D605D003CD162 /* NSInvocation+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+EXT.m"; path = "../../../Downloads/libextobjc-master/extobjc/NSInvocation+EXT.m"; sourceTree = "<group>"; };
 		C7C78B1D1C3D605D003CD162 /* NSMethodSignature+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+EXT.h"; path = "../../../Downloads/libextobjc-master/extobjc/NSMethodSignature+EXT.h"; sourceTree = "<group>"; };
 		C7C78B1E1C3D605D003CD162 /* NSMethodSignature+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+EXT.m"; path = "../../../Downloads/libextobjc-master/extobjc/NSMethodSignature+EXT.m"; sourceTree = "<group>"; };
+		C7E65E0C1C29796800FF1FC1 /* PhotoInfoStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoInfoStorage.h; path = Model/PhotoInfoStorage.h; sourceTree = "<group>"; };
+		C7E65E0D1C29796800FF1FC1 /* PhotoInfoStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoInfoStorage.m; path = Model/PhotoInfoStorage.m; sourceTree = "<group>"; };
 		C7E65E0F1C29958D00FF1FC1 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = Controllers/ImageViewController.h; sourceTree = "<group>"; };
 		C7E65E101C29958D00FF1FC1 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = Controllers/ImageViewController.m; sourceTree = "<group>"; };
 		C7E65E121C2997DD00FF1FC1 /* PhotosFromPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotosFromPlaceViewController.h; path = Controllers/PhotosFromPlaceViewController.h; sourceTree = "<group>"; };
@@ -253,6 +256,8 @@
 				C7E65E151C2A7A0D00FF1FC1 /* PhotoInfo.h */,
 				C7E65E161C2A7A0D00FF1FC1 /* PhotoInfo.m */,
 				C78E00F61C2AF73700D08679 /* PhotoInfoParser.h */,
+				C7E65E0C1C29796800FF1FC1 /* PhotoInfoStorage.h */,
+				C7E65E0D1C29796800FF1FC1 /* PhotoInfoStorage.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -434,6 +439,8 @@
 				C7C78B241C3D605D003CD162 /* EXTScope.m in Sources */,
 				C76A4AB41C2814420047232B /* TopPlacesViewController.m in Sources */,
 				C78E00F91C2AF79400D08679 /* FlickrPhotoInfoParser.m in Sources */,
+				C7E65E0E1C29796800FF1FC1 /* PhotoInfoStorage.m in Sources */,
+				C7E65E0B1C29770B00FF1FC1 /* RecentPicturesController.m in Sources */,
 				C7AFCEE31C29293D00D14A85 /* FlickrInformation.m in Sources */,
 				C7E65E1B1C2ABCC300FF1FC1 /* FlickrLocationParser.m in Sources */,
 				C7E65E111C29958D00FF1FC1 /* ImageViewController.m in Sources */,
