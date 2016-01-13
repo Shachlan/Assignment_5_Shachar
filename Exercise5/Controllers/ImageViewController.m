@@ -8,7 +8,10 @@
 
 #import "ImageViewController.h"
 
+#import "EXTScope.h"
 #import "ImageFetcher.h"
+#import "PhotoInfo.h"
+#import "PhotoInfoStorage.h"
 
 @interface ImageViewController () <UIScrollViewDelegate, UISplitViewControllerDelegate>
 
@@ -37,6 +40,7 @@
   [super viewDidLoad];
   [self.scrollView addSubview:self.imageView];
   [self setupScrollView];
+  self.spinner.hidesWhenStopped = YES;
   [self startDownloadingImage];
 }
 
@@ -90,20 +94,18 @@
 #pragma mark Setting the Image from the Image's URL
 #pragma mark -
 
-- (void)setImageURL:(NSURL *)imageURL
-{
-  _imageURL = imageURL;
-}
-
 - (void)startDownloadingImage
 {
-  if (self.imageURL)
+  if (self.photoInfo)
   {
+    @weakify(self);
     [self.spinner startAnimating];
-    [ImageFetcher downloadImageFromUrl:self.imageURL
+    [ImageFetcher downloadImageFromUrl:self.photoInfo.url
                         withCompletion:^(UIImage *image) {
+      @strongify(self);
       self.image = image;
       [self.spinner stopAnimating];
+      [PhotoInfoStorage storePhotoInfo:self.photoInfo];
     }
                               error:^(NSError *error) {
       NSLog(@"%@", [error description]);

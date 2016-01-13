@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class PhotoInfo;
+
 /// Controller for the Image view. Downloads and displays an image from a given URL.
 @interface ImageViewController : UIViewController
 
-/// URL for the image that this view will display.
-@property (nonatomic, strong) NSURL *imageURL;
+/// Info about the image that this view will display.
+@property (nonatomic, strong) PhotoInfo *photoInfo;
 
 @end

@@ -30,6 +30,7 @@ static const int kMaxPhotosPerLocation = 50;
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
+  [self.tableView reloadData];
   [self fetchPhotosFromPlace];
 }
 
@@ -41,7 +42,7 @@ static const int kMaxPhotosPerLocation = 50;
   
   ImageViewController *destination = segue.destinationViewController;
   PhotoInfo *photo = [self.photos objectAtIndex:index.item];
-  destination.imageURL = photo.url;
+  destination.photoInfo = photo;
   destination.title = photo.photoTitle;
 }
 
